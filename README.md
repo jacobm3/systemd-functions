@@ -102,7 +102,3 @@ terminal). The script defends against this by running `unalias` on its own names
 before defining them — so it's safe to source even if you have conflicting
 aliases. If you want to keep a conflicting alias under a different name, rename
 it before sourcing.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
