@@ -5,6 +5,8 @@ Short, memorable shell helpers for everyday **systemd** work — wrappers around
 automatically when it's needed, and print results in a colorized, paged,
 [k9s](https://k9scli.io/)-style layout.
 
+This sits between basic shell aliases and a full-blown TUI like https://github.com/rgwood/systemctl-tui
+
 It's a single file you `source` from your shell. No daemon, no dependencies to
 install, no config.
 
