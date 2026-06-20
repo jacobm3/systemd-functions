@@ -18,6 +18,10 @@ $ sc restart nginx        # auto-sudo; no more "Failed to restart: access denied
 $ schelp                  # a colorized cheat-sheet of everything (alias: sch)
 ```
 
+Forget a command? `schelp` (or `sch`) prints the whole thing, colorized:
+
+![schelp output — a colorized table of every helper plus a journalctl flag reference](img/sch.png)
+
 ## Why use it
 
 `systemctl` is powerful but wordy, and you end up typing the same long
@@ -41,6 +45,20 @@ incantations all day. These helpers fix the small papercuts:
 - **Mnemonic names.** Each name reads as *SystemCtl + verb*, so the letters tell
   you what it does: `sclt` = **S**ystem**C**tl **L**ist **T**imers,
   `scwh` = **S**ystem**C**tl **WH**ere, etc.
+
+## Screenshots
+
+`sclu` — running services, `STATE` colored (green = healthy):
+
+![sclu output — a table of running services with the STATE column in green](img/sclu.png)
+
+`sclt` — every timer, with relative times in lavender:
+
+![sclt output — a table of timers showing next/last run, durations highlighted, and the unit each activates](img/sclt.png)
+
+`scboot` — what made the last boot slow (`systemd-analyze blame`), durations highlighted:
+
+![scboot output — a list of units sorted by startup time, with the durations highlighted](img/scboot.png)
 
 ## Install
 
